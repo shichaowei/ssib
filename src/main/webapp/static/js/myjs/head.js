@@ -70,7 +70,7 @@ $(function(){
 var websocket;
 function online(){
 	if (window.WebSocket) {
-		websocket = new WebSocket(encodeURI('ws://127.0.0.1:8889'));
+		websocket = new WebSocket(encodeURI('ws://127.0.0.1:9000'));
 		
 		websocket.onopen = function() {
 			//连接成功

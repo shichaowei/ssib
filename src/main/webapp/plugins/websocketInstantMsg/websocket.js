@@ -65,7 +65,7 @@ function toUserMsg(toU){
 			//初始话WebSocket
 			function initWebSocket() {
 				if (window.WebSocket) {
-					websocket = new WebSocket(encodeURI('ws://127.0.0.1:8887'));
+					websocket = new WebSocket(encodeURI('ws://127.0.0.1:9000'));
 					
 					websocket.onopen = function() {
 						//连接成功
@@ -181,7 +181,7 @@ function toUserMsg(toU){
 									type : 'message'
 								});
 						websocket.send(JSON.stringify(message));
-						//output.receive(message);
+						output.receive(message);
 						input.setValue('');
 					}
 				} else {

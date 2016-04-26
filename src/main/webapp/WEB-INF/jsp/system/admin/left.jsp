@@ -11,7 +11,7 @@
 
 						<button class="btn btn-small btn-success" onclick="changeMenu();" title="切换菜单"><i class="icon-pencil"></i></button>
 
-						<button class="btn btn-small btn-info" title="UI实例" onclick="window.open('<%=basePathl%>static/UI_new');"><i class="icon-eye-open"></i></button>
+						<!-- <button class="btn btn-small btn-info" title="UI实例" onclick="window.open('<%=basePathl%>static/UI_new');"><i class="icon-eye-open"></i></button> -->
 
 						<button class="btn btn-small btn-warning" title="数据字典" id="adminzidian" onclick="zidian();"><i class="icon-book"></i></button>
 						
@@ -22,7 +22,7 @@
 					<div id="sidebar-shortcuts-mini">
 						<span class="btn btn-success"></span>
 
-						<span class="btn btn-info"></span>
+					<!--	<span class="btn btn-info"></span> -->
 
 						<span class="btn btn-warning"></span>
 

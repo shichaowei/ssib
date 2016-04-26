@@ -35,7 +35,6 @@ import com.fh.util.AppUtil;
 import com.fh.util.Const;
 import com.fh.util.FileDownload;
 import com.fh.util.FileUpload;
-import com.fh.util.GetPinyin;
 import com.fh.util.Jurisdiction;
 import com.fh.util.ObjectExcelRead;
 import com.fh.util.PageData;
@@ -453,10 +452,10 @@ public class UserController extends BaseController {
 				pd.put("USER_ID", this.get32UUID());										//ID
 				pd.put("NAME", listPd.get(i).getString("var1"));							//姓名
 				
-				String USERNAME = GetPinyin.getPingYin(listPd.get(i).getString("var1"));	//根据姓名汉字生成全拼
+				String USERNAME = listPd.get(i).getString("var1");	//根据姓名汉字生成全拼
 				pd.put("USERNAME", USERNAME);	
 				if(userService.findByUId(pd) != null){										//判断用户名是否重复
-					USERNAME = GetPinyin.getPingYin(listPd.get(i).getString("var1"))+Tools.getRandomNum();
+					USERNAME = listPd.get(i).getString("var1")+Tools.getRandomNum();
 					pd.put("USERNAME", USERNAME);
 				}
 				pd.put("BZ", listPd.get(i).getString("var4"));								//备注

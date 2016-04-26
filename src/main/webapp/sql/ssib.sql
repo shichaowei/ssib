@@ -1,10 +1,10 @@
 /*
 MySQL Data Transfer
 Source Host: localhost
-Source Database: test1
+Source Database: ssib
 Target Host: localhost
-Target Database: test1
-Date: 2016/3/8 ÐÇÆÚ¶þ 23:03:39
+Target Database: ssib
+Date: 2016/3/8 ï¿½ï¿½ï¿½Ú¶ï¿½ 23:03:39
 */
 
 SET FOREIGN_KEY_CHECKS=0;
